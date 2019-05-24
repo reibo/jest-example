@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SnapshotComponent we have 10 images to visualise should render 10 images in our template 1`] = `
+<app-snapshot
+  images={[Function Array]}
+  maxCols={[Function Number]}
+  sanitizer={[Function DomSanitizerImpl]}
+>
+  <mat-grid-list
+    class="mat-grid-list"
+    ng-reflect-cols="4"
+    ng-reflect-row-height="100px"
+    rowheight="100px"
+  >
+    <div>
+      
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="2"
+        style="left: 0px; top: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="1"
+        style="top: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="1"
+        style="top: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="2"
+        ng-reflect-rowspan="3"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="2"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="1"
+        style="left: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="1"
+        style="left: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="2"
+        ng-reflect-rowspan="3"
+        style="left: 0px;"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="2"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+      <mat-grid-tile
+        class="mat-grid-tile"
+        ng-reflect-colspan="1"
+        ng-reflect-rowspan="1"
+      >
+        <figure
+          class="mat-figure"
+        >
+          <div />
+        </figure>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+</app-snapshot>
+`;

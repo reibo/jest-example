@@ -1,8 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <mat-toolbar color="primary">
+      <h1>Jest Example</h1>
+      <span class="spacer"></span>
+    </mat-toolbar>
+    <app-snapshot [totalImages]="10"></app-snapshot>`,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
