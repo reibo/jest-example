@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`image.utils .listImages(1, 1) match snapshot 1`] = `
+Array [
+  Object {
+    "cols": 1,
+    "id": 0,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=0)",
+  },
+]
+`;
+
+exports[`image.utils .listImages(3, 2) match snapshot 1`] = `
+Array [
+  Object {
+    "cols": 1,
+    "id": 0,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=0)",
+  },
+  Object {
+    "cols": 1,
+    "id": 1,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=1)",
+  },
+  Object {
+    "cols": 1,
+    "id": 2,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=2)",
+  },
+]
+`;
+
+exports[`image.utils .listImages(5, 2) match snapshot 1`] = `
+Array [
+  Object {
+    "cols": 1,
+    "id": 0,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=0)",
+  },
+  Object {
+    "cols": 1,
+    "id": 1,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=1)",
+  },
+  Object {
+    "cols": 1,
+    "id": 2,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=2)",
+  },
+  Object {
+    "cols": 1,
+    "id": 3,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=3)",
+  },
+  Object {
+    "cols": 1,
+    "id": 4,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=4)",
+  },
+]
+`;
+
+exports[`image.utils on list images should return a complete list 1`] = `
+Array [
+  Object {
+    "cols": 1,
+    "id": 0,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=0)",
+  },
+  Object {
+    "cols": 1,
+    "id": 1,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=1)",
+  },
+  Object {
+    "cols": 1,
+    "id": 2,
+    "rows": 1,
+    "src": "url(\\"https://source.unsplash.com/random/400x300?sig=2)",
+  },
+]
+`;

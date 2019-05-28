@@ -1,8 +1,8 @@
 import {Component, Input} from '@angular/core';
-import {Image} from './image.model';
+import {SafeImage} from './image.model';
 import {DomSanitizer} from '@angular/platform-browser';
+import {listImages} from '../utils/image.utils';
 
-const IMAGE_SOURCE = 'https://picsum.photos/600';
 
 @Component({
   selector: 'app-snapshot',
@@ -12,8 +12,7 @@ const IMAGE_SOURCE = 'https://picsum.photos/600';
         *ngFor="let image of images"
         [colspan]="image.cols"
         [rowspan]="image.rows">
-        <div
-          [style.background-image]="image.src"></div>
+        <div [style.background-image]="image.src"></div>
       </mat-grid-tile>
     </mat-grid-list>
   `,
@@ -22,34 +21,16 @@ const IMAGE_SOURCE = 'https://picsum.photos/600';
 export class SnapshotComponent {
   maxCols = 6;
 
-  images: Image[];
+  images: SafeImage[];
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer) {
+  }
 
   @Input() set totalImages(totalImages: number) {
     this.maxCols = totalImages % 6 || 6;
-    const images: Image[] = [];
-    for (let i = 0; i < totalImages; i++) {
-      images.push({
-        id: i,
-        src: this.sanitizer.bypassSecurityTrustStyle(this.generateRandomUrl(i)),
-        rows: this.getRows(i, totalImages),
-        cols: this.getCols(i, totalImages)
-      });
-    }
-    this.images = images;
-  }
-
-  private getRows(id: number, totalElements: number) {
-    return (totalElements - id) % this.maxCols || 1;
+    this.images = listImages(totalImages, this.maxCols)
+      .map(image => ({...image, src: this.sanitizer.bypassSecurityTrustStyle(image.src)}));
   }
 
 
-  private getCols(id: number, totalElements: number) {
-    return Math.floor((id % this.maxCols) / 3 + 1);
-  }
-
-  private generateRandomUrl(id: number) {
-    return `url("${IMAGE_SOURCE}?random=${id})`;
-  }
 }
